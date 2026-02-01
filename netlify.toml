@@ -1,0 +1,12 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+
+[[redirects]]
+  from = "/install.sh"
+  to = "/install.sh"
+  status = 200
+  force = true
+  conditions = {BasicAuth = ["admin:strongpassword"]}
+  
